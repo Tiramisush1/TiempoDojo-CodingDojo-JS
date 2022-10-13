@@ -47,7 +47,7 @@
 .box-2 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .temp{
@@ -56,4 +56,31 @@
 
 .container h1{
     font-size: 35px;
+}
+
+.container-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.block{
+    display: block;
+    height: 200px;
+    width: 160px;
+    background-color: green;
+}
+
+.content{
+    display:    inline;
+    justify-content: center;
+    ealign-items: center;
+    
+}
+
+.rain{
+    background-image: url(assets/some_rain.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
 }
