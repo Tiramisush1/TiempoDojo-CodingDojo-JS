@@ -38,7 +38,7 @@
 .container{
     width: 1080px;
     margin: 0 auto;
-    border: 2px solid blue;
+
     padding-top: 1.5%;
     padding-bottom: 1.5%;
 
@@ -47,11 +47,15 @@
 .box-2 {
     display: flex;
     justify-content: space-between;
-    
+    padding-bottom: 2%;
+    border-bottom: 3px solid black;
+
 }
 
 .temp{
     display: flex;
+    align-items: center;
+    
 }
 
 .container h1{
@@ -61,26 +65,83 @@
 .container-2{
     display: flex;
     justify-content: space-around;
+    padding-top: 2%;
 }
 
 .block{
     display: block;
-    height: 200px;
-    width: 160px;
-    background-color: green;
+    height: 330px;
+    width: 200px;
+    background-color: #eeeeee;
+
 }
 
 .content{
-    display:    inline;
+    display: inline-flexbox;
     justify-content: center;
-    ealign-items: center;
+    align-items: center;
+    text-align: center;
     
 }
 
 .rain{
     background-image: url(assets/some_rain.png);
     background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.sun{
+    background-image: url(assets/some_sun.png);
+    background-repeat: no-repeat;
     background-size: contain;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.cloud{
+    background-image: url(assets/some_clouds.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.content-margin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days{
+    color: black;
+    padding: 5%;
+}
+
+.block-text{
+    padding: 10%;
+}
+
+.red{
+    color: red;
+    font-size: 30px;
+}
+.blue{
+    color: blue;
+    font-size: 30px;
+}
+
+.grados{
+    display: flex;
+    justify-content: space-around;
+}
+
+p{
+    font-size: 20px;
 }
