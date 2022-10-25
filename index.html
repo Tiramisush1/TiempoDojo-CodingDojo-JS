@@ -15,9 +15,9 @@
         <div class="box-1">
             <h1 class="nav-title">DojoWeather</h1>
             <ul class="nav-links">
-                <li><a href="#">Burbank</a></li>
-                <li><a href="#" class="active">Chicago</a></li>
-                <li><a href="#">Dallas</a></li>
+                <li><a href="#" class="cities-link" onclick="alerts()">Burbank</a></li>
+                <li><a href="#" class="cities-link" onclick="alerts()">Chicago</a></li>
+                <li><a href="#" class="cities-link" onclick="alerts()">Dallas</a></li>
             </ul>
         </div>
     </nav>
@@ -29,10 +29,9 @@
             <h1>San Jose</h1>
             <div class="temp">
                 <p>show temperature in</p>
-                <select name="celsius">
-                    <option>C°</option>
-                    <option>F°</option>
-                    <option>K</option>
+                <select name="select" id="select" class="select" onchange="changeTemp(this)">
+                    <option value="celcius">°C</option>
+                    <option value="fahrenheit">°F</option>
                 </select>
             </div>
 
@@ -50,8 +49,8 @@
                     <div class="block-text">
                         <p>some rain</p>
                         <div class="grados">
-                            <h4 class="red">24°</h4>
-                            <h4 class="blue">18°</h4>
+                            <h4 class="red" id="temp">24°</h4>
+                            <h4 class="blue" id="temp">18°</h4>
                         </div>
                     </div>
 
@@ -67,8 +66,8 @@
                     <div class="block-text">
                         <p>some sun</p>
                         <div class="grados">
-                            <h4 class="red">27°</h4>
-                            <h4 class="blue">19°</h4>
+                            <h4 class="red" id="temp">27°</h4>
+                            <h4 class="blue" id="temp">19°</h4>
                         </div>
                     </div>
                 </div>
@@ -84,8 +83,8 @@
                     <div class="block-text">
                         <p>some clouds</p>
                         <div class="grados">
-                            <h4 class="red">21°</h4>
-                            <h4 class="blue">16°</h4>
+                            <h4 class="red" id="temp">21°</h4>
+                            <h4 class="blue" id="temp">16°</h4>
                         </div>
                     </div>
                 </div>
@@ -100,8 +99,8 @@
                     <div class="block-text">
                         <p>some sun</p>
                         <div class="grados">
-                            <h4 class="red">26°</h4>
-                            <h4 class="blue">21°</h4>
+                            <h4 class="red" id="temp">26°</h4>
+                            <h4 class="blue" id="temp">21°</h4>
                         </div>
                     </div>
                 </div>
@@ -110,6 +109,17 @@
         </div>
 
     </section>
+
+    <div class="msg-cookie" id="cookie">
+        <div class="cookie-img"></div>
+        <div class="text-side">
+            <h4>Stop! Cookie time</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore numquam magni impedit quo, ratione corporis fugit! Nisi libero mollitia id magnam molestiae similique modi eaque debitis! At repellendus modi harum!</p>
+            <div class="btnn">
+                <button class="btn" onclick="removes()">I accept</button>
+            </div>
+        </div>
+    </div>
 </body>
     <script src="script.js"></script>
 </html>
